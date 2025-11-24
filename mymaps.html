@@ -20,9 +20,15 @@ var mymap = L.map('mapid', {
 });
 
 L.tileLayer('https://tile.openstreetmap.de/{z}/{x}/{y}.png').addTo(mymap);
-var markBota = L.marker([48.523549, 9.057546]).addTo(mymap)
-markBota.bindPopup("<p>This is the Botanical Garden</p>")
+var markBota = L.marker([48.523549, 9.057546]).addTo(mymap);
 
+markBota.bindPopup(
+  '<h1>Schau mal hier:</h1>' +
+  '<iframe width="420" height="345" ' +
+  'src="https://www.youtube.com/embed/xvFZjo5PgG0?autoplay=1&mute=1" ' +
+  'frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>' +
+  '</iframe>'
+);
 
 </script>
 
