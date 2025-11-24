@@ -14,12 +14,12 @@
 
 <div id="mapid" style="width: 600px; height: 400px; position: relative;"></div>
 <script>
-var map = L.map('mapid', {
-    center: [51.505, -0.09],
-    zoom: 13
+var mymap = L.map('mapid', {
+    center: [ 48.5240136, 9.0553092],
+    zoom: 20
 });
 
-L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png').addTo(mymap);
+L.tileLayer('https://tile.openstreetmap.de/{z}/{x}/{y}.png').addTo(mymap);
 
 </script>
 
